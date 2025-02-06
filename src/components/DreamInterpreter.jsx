@@ -65,7 +65,7 @@ const DreamInterpreter = () => {
       <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg  flex flex-col gap-5">
       <BibleVerse />
         <div className='flex flex-col  text-center'>
-        <h1 className="text-3xl font-bold text-center text-purple-900 mb-4 font-syne">The Dream Oracle AI</h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-center text-purple-900 mb-4 font-syne">The Dream Oracle AI</h1>
         <p className='italic'>
         &quot;We both had dreams,&quot; they answered, &quot;but there is no one to interpret them.&quot;
       Then Joseph said to them, &quot;Do not interpretations belong to God? Tell me your dreams.&quot;
