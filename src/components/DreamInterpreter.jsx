@@ -83,7 +83,7 @@ const DreamInterpreter = () => {
               onChange={handleInputChange}
               placeholder="Describe your dream here..."
               rows="3"
-              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-600 text-black"
+              className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-600 text-black text-xs"
               required
             />
           </div>
