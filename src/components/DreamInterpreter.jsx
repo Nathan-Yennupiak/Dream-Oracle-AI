@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import BibleVerse from './HeaderImage';
+import HeaderImage from './HeaderImage';
 
 const DreamInterpreter = () => {
   const [dreamInput, setDreamInput] = useState('');
@@ -18,10 +18,10 @@ const DreamInterpreter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission
 
-    if (!dreamInput.includes("dream")) {
-      alert("Please include the word 'dream' in your input.");
-      return;
-    }
+    if (!dreamInput.toLowerCase().includes("dream")) {
+        alert("Please include the word 'dream' in your input.");
+        return;
+      }
 
     setLoading(true); // Set loading state to true
     setError(''); // Clear any previous errors
@@ -63,10 +63,10 @@ const DreamInterpreter = () => {
     <div className="min-h-screen bg-gray-100 p-4 md:p-8 flex flex-col gap-5 items-center justify-center">
         
       <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg  flex flex-col gap-5">
-      <BibleVerse />
-        <div className='flex flex-col  text-center'>
-        <h1 className="text-2xl md:text-3xl font-bold text-center text-purple-900 mb-4 font-syne">The Dream Oracle AI</h1>
-        <p className='italic'>
+      <HeaderImage />
+        <div className='flex flex-col text-center'>
+        <h1 className="text-2xl md:text-3xl font-bold text-center text-purple-900 mb-4 title">The Dream Oracle AI</h1>
+        <p className='italic title'>
         &quot;We both had dreams,&quot; they answered, &quot;but there is no one to interpret them.&quot;
       Then Joseph said to them, &quot;Do not interpretations belong to God? Tell me your dreams.&quot;
       &mdash;{" "} <span className='font-semibold'>Genesis 40:8 </span> </p>
@@ -90,7 +90,7 @@ const DreamInterpreter = () => {
 
           <button
             type="submit"
-            className="w-full py-4 px-4 bg-purple-800 text-white font-semibold rounded-md shadow-md hover:bg-purple-700"
+            className="w-full py-4 px-4 bg-purple-800 text-white font-semibold rounded-md shadow-md hover:bg-purple-700 title"
             disabled={loading}
           >
             {loading ? 'Interpreting...' : 'Interpret Dream'}
@@ -107,7 +107,7 @@ const DreamInterpreter = () => {
           </div>
         )}
       </div>
-      <footer>Made with Love : Rev Nathan Yennupiak ❤️🕎</footer>
+      <footer className='title'>Made with Love : Rev Nathan Yennupiak ❤️🕎</footer>
     </div>
     
   );
