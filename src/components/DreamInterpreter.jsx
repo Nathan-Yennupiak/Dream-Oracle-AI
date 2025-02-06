@@ -62,9 +62,9 @@ const DreamInterpreter = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-8 flex flex-col gap-5 items-center justify-center">
         
-      <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg  flex flex-col gap-5 i">
+      <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg  flex flex-col gap-5">
       <BibleVerse />
-        <div className='flex flex-col gap-2  text-center'>
+        <div className='flex flex-col  text-center'>
         <h1 className="text-3xl font-bold text-center text-purple-900 mb-4">The Dream Oracle AI</h1>
         <p className='italic'>
         &quot;We both had dreams,&quot; they answered, &quot;but there is no one to interpret them.&quot;
@@ -103,7 +103,7 @@ const DreamInterpreter = () => {
           <div className=" flex flex-col gap-5 mt-6 text-md text-gray-800">
             <p><strong>Interpretation:</strong> {interpretation}</p>
             <p ><strong className='text-red-500'>Note:</strong> {reminder}</p>
-            <p className='text-purple-800'><strong>PoweredBy:</strong> {poweredBy}</p>
+            {/* <p className='text-purple-800'><strong>PoweredBy:</strong> {poweredBy}</p> */}
           </div>
         )}
       </div>
