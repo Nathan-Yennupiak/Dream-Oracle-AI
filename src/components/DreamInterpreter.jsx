@@ -60,16 +60,16 @@ const DreamInterpreter = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4 md:p-8 flex flex-col gap-5 items-center justify-center">
+    <main className="min-h-screen bg-gray-100 p-4 md:p-8 flex flex-col gap-5 items-center justify-center">
         
-      <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg  flex flex-col gap-5">
+      <div className="w-[800px] max-w-full mx-auto bg-white px-4 md:p-8 rounded-lg shadow-lg  flex flex-col gap-5">
       <HeaderImage />
         <div className='flex flex-col text-center'>
         <h1 className="text-2xl md:text-3xl font-bold text-center text-purple-900 mb-4 title">The Dream Oracle AI</h1>
         <p className='italic title'>
         &quot;We both had dreams,&quot; they answered, &quot;but there is no one to interpret them.&quot;
-      Then Joseph said to them, &quot;Do not interpretations belong to God? Tell me your dreams.&quot;
-      &mdash;{" "} <span className='font-semibold'>Genesis 40:8 </span> </p>
+      Then Joseph said to them, &quot;Do not interpretations belong to God? Tell me your dreams. </p>
+      <p className='font-semibold font-montserrat'>Genesis 40:8 </p> 
       
         </div>
         
@@ -108,7 +108,7 @@ const DreamInterpreter = () => {
         )}
       </div>
       <footer className='title'>Made with Love : Rev Nathan Yennupiak ❤️🕎</footer>
-    </div>
+    </main>
     
   );
 };
