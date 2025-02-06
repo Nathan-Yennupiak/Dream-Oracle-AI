@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import BibleVerse from './Bibleverse';
 
 const DreamInterpreter = () => {
   const [dreamInput, setDreamInput] = useState('');
@@ -60,8 +61,11 @@ const DreamInterpreter = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 md:p-8 flex flex-col gap-5 items-center justify-center">
-      <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg border-2 border-purple-800">
+        
+      <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg border-2 border-purple-800 flex flex-col gap-5 i">
+      <BibleVerse />
         <h1 className="text-3xl font-bold text-center text-purple-800 mb-4">Dream Oracle AI</h1>
+        
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
