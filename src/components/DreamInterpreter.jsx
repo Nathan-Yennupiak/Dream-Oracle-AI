@@ -59,21 +59,22 @@ const DreamInterpreter = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8 flex items-center justify-center">
-      <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-center text-purple-800 mb-4">DREAM INTERPRETER AI</h1>
+    <div className="min-h-screen bg-gray-100 p-8 flex flex-col gap-5 items-center justify-center">
+      <div className="w-[800px] max-w-full mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg border-2 border-purple-800">
+        <h1 className="text-3xl font-bold text-center text-purple-800 mb-4">Dream Oracle AI</h1>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="dreamInput" className="block text-sm font-medium text-gray-700">
               Enter your dream
             </label>
-            <input
+            <textarea
               type="text"
               id="dreamInput"
               value={dreamInput}
               onChange={handleInputChange}
               placeholder="Describe your dream..."
+              rows="5"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-600 text-black"
               required
             />
@@ -98,7 +99,9 @@ const DreamInterpreter = () => {
           </div>
         )}
       </div>
+      <footer>Made with Love : Rev Nathan Yennupiak ❤️🕎</footer>
     </div>
+    
   );
 };
 
