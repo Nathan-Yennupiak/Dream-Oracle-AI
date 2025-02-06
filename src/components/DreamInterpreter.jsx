@@ -62,7 +62,7 @@ const DreamInterpreter = () => {
   return (
     <main className="min-h-screen bg-gray-100 p-4 md:p-8 flex flex-col gap-5 items-center justify-center">
         
-      <div className="w-[800px] max-w-full mx-auto bg-white px-4 md:p-8 rounded-lg shadow-lg  flex flex-col gap-5">
+      <div className="w-[800px] max-w-full mx-auto bg-white p-4 md:p-12 rounded-lg shadow-lg  flex flex-col gap-5">
       <HeaderImage />
         <div className='flex flex-col text-center'>
         <h1 className="text-2xl md:text-3xl font-bold text-center text-purple-900 mb-4 title">The Dream Oracle AI</h1>
@@ -82,7 +82,7 @@ const DreamInterpreter = () => {
               value={dreamInput}
               onChange={handleInputChange}
               placeholder="Describe your dream here..."
-              rows="5"
+              rows="3"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-600 text-black"
               required
             />
