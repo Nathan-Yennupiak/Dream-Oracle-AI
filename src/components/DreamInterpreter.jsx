@@ -82,7 +82,7 @@ const DreamInterpreter = () => {
               value={dreamInput}
               onChange={handleInputChange}
               placeholder="Describe your dream here..."
-              rows="3"
+              rows="5"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-600 text-black text-xs"
               required
             />
@@ -101,7 +101,7 @@ const DreamInterpreter = () => {
         {error && <div className="mt-4 text-red-600">{error}</div>}
         {interpretation && (
           <div className=" flex flex-col gap-5 mt-6 text-md text-gray-800">
-            <p><strong>Interpretation:</strong> {interpretation}</p>
+            <p className='text-sm'><strong>Interpretation:</strong> {interpretation}</p>
             <p ><strong className='text-red-500'>Note:</strong> {reminder}</p>
             {/* <p className='text-purple-800'><strong>PoweredBy:</strong> {poweredBy}</p> */}
           </div>
